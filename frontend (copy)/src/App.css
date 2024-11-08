@@ -1,0 +1,63 @@
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.code-editor {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.input-section {
+  margin: 20px 0;
+}
+
+.input-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+  resize: vertical;
+}
+
+.run-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.run-button:hover {
+  background-color: #45a049;
+}
+
+.output-section {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.output-section pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+}
+
+h2, h4 {
+  color: #333;
+  margin-bottom: 10px;
+}

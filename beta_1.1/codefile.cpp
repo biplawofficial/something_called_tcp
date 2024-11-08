@@ -1,7 +1,6 @@
-#include<iostream> 
+#include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-cout<<"hello world"<<endl;
-cout<<"makn"<<endl;
+int main(){
+    cout<<"Hello, Fk!";
+    return 0;
 }

@@ -3,13 +3,10 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  // const code = {
-  //   cpp_code: `#include <iostream>\nusing namespace std;\nint main() {\n  cout << "Hello, World!" << endl;\n  return 0;\n}`,
-  // };
   const [tcode, setcode] = useState("");
   const [response, setresponse] = useState(null);
   const handler = async () => {
-    const req = await fetch("http://localhost:3000/cpp", {
+    const req = await fetch("http://localhost:3001/cpp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +28,7 @@ function App() {
         onChange={change}
         rows="10"
         cols="50"
-        placeholder="Write your C++ code here"
+        placeholder="#include<bits/stdc++.h>"
       ></textarea>
       <br />
       <button onClick={handler}>Send C++ Code to Backend</button>
